@@ -31,7 +31,7 @@ public class AFKEdits extends TimerTask {
         if(oldValue == 0) {
             timer.cancel();
             timer.purge();
-            message.editMessage("AFK Timer Over <@" + user.getId() + ">").queue();
+            message.editMessage("<@" + user.getId() + "> AFK Timer Finished").queue();
             return;
         }
         message.editMessage("<@" + user.getId() + "> AFK timer - " + (oldValue - 1) + " " + secsMinsHours).queue();
