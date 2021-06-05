@@ -60,7 +60,7 @@
                     <configuration>
                         <archive>
                             <manifest>
-                                <mainClass>com.roufid.tutorials.AppTest</mainClass>
+                                <mainClass>bot</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
