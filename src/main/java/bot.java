@@ -10,7 +10,8 @@ public class bot {
 
 
     public static void main(String[] args) throws LoginException {
-        JDA jda = JDABuilder.createDefault(config.get("TOKEN")).build();
+//        JDA jda = JDABuilder.createDefault(config.get("TOKEN")).build();
+        JDA jda = JDABuilder.createDefault(System.getenv("TOKEN")).build();
         jda.getPresence().setStatus(OnlineStatus.ONLINE);
         jda.getPresence().setActivity(Activity.watching("the clock | e.g. !afk 10m"));
 
